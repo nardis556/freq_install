@@ -36,19 +36,19 @@ git checkout stable
 # --install, Install freqtrade from scratch
 ./setup.sh -i
 
-function code() {
-    bash -c 'curl -fsSL https://code-server.dev/install.sh | sh'
-    bash -c 'sudo systemctl enable --now code-server@$USER'
-}
+# function code() {
+#     bash -c 'curl -fsSL https://code-server.dev/install.sh | sh'
+#     bash -c 'sudo systemctl enable --now code-server@$USER'
+# }
 
-echo 'Would you like to install code-server? Enter: y/n'
-read codeCond
+# echo 'Would you like to install code-server? Enter: y/n'
+# read codeCond
 
-if [ $codeCond == 'y' ]
-then
-  echo "installing code-server"
-  code
-fi
+# if [ $codeCond == 'y' ]
+# then
+#   echo "installing code-server"
+#   code
+# fi
 
 echo '# activate env'
 echo 'source ./.env/bin/activate'
