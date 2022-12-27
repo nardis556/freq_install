@@ -32,10 +32,14 @@ git checkout stable
 # --install, Install freqtrade from scratch
 ./setup.sh -i
 
-echo 'activate env'
+echo '# activate env'
 echo 'source ./.env/bin/activate'
-echo 'Step 1 - Initialize user folder: freqtrade create-userdir --userdir user_data'
-echo 'Step 2 - Create a new configuration file: freqtrade new-config --config config.json'
-echo 'Sample strategies: https://github.com/freqtrade/freqtrade-strategies'
-echo 'install freqtrade UI: freqtrade install-ui'
-echo 'start the bot: freqtrade trade --config config.json --strategy SampleStrategy'
+echo '# Step 1 - Initialize user folder: '
+echo 'freqtrade create-userdir --userdir user_data'
+echo '# Step 2 - Create a new configuration file: '
+echo 'freqtrade new-config --config config.json'
+echo '# Sample strategies: https://github.com/freqtrade/freqtrade-strategies'
+echo '# install freqtrade UI: '
+echo 'freqtrade install-ui'
+echo '# start the bot: '
+echo 'freqtrade trade --config config.json --strategy SampleStrategy'
