@@ -21,10 +21,14 @@ sudo apt install -y git curl python-is-python3 pip python3-pip python3-venv pyth
 
 # install freqtrade
 # Download `develop` branch of freqtrade repository
-git clone https://github.com/freqtrade/freqtrade.git
+echo 'Enter dirname or enter to use default'
+read dir
+defaultDir='freqtrade'
+onDir=${dir:-$defaultDir}
+git clone https://github.com/freqtrade/freqtrade.git $onDir
 
 # Enter downloaded directory
-cd freqtrade
+cd $onDir
 
 # your choice (1): novice user
 git checkout stable
