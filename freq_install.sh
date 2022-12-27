@@ -17,7 +17,7 @@ rm -rf ./ta-lib*
 sudo apt-get update
 
 # install packages
-sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git curl
+sudo apt install -y git curl python-is-python3 pip python3-pip python3-venv python3-dev python3-pandas
 
 # install freqtrade
 # Download `develop` branch of freqtrade repository
